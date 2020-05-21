@@ -1,0 +1,15 @@
+/**
+ * @param {number} x
+ * @return {number}
+ */
+var reverse = function(x) {
+    var s = (x.toString()).split("").reverse().join(""); 
+    if(parseInt(s) < 2147483647 && parseInt(s) > -2147483648) {
+    if (x < 0)
+    return parseInt(s) * -1 
+    else 
+    return parseInt(s);
+    } else {
+        return 0
+    }  
+};
