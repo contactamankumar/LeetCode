@@ -1,0 +1,17 @@
+/**
+ * @param {number} num
+ * @return {number}
+ */
+var addDigits = function(num) {
+    var value = num
+ if (num == 0) {
+     return num
+ }
+  while (value) {
+  value = (value - 1) % 9 + 1;
+    if(value < 10){
+        return value;
+    }
+  }
+    
+};
